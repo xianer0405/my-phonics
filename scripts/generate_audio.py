@@ -6,18 +6,27 @@ def generate_audio(text, filename):
     tts.save(f'../public/audio/{filename}')
 
 # 生成音频文件
+# 在 audio_files 字典中添加新的音频配置
 audio_files = {
-    # 元音字母
+    # 元音字母发音
+    'a_sound.mp3': 'æ',
+    'e_sound.mp3': 'e',
+    'i_sound.mp3': 'ɪ',
+    'o_sound.mp3': 'ɒ',
+    'u_sound.mp3': 'ʌ',
+    'a_long_sound.mp3': 'eɪ',
+    'e_long_sound.mp3': 'iː',
+    'i_long_sound.mp3': 'aɪ',
+    'o_long_sound.mp3': 'əʊ',
+    'u_long_sound.mp3': 'juː',
+
+    # 原有的音频文件配置保持不变
     'a.mp3': 'A',
     'e.mp3': 'E',
     'i.mp3': 'I',
     'o.mp3': 'O',
     'u.mp3': 'U',
-
-    # 元音示例词
     'cat.mp3': 'cat',
-    'cake.mp3': 'cake',
-    'apple.mp3': 'apple',
     'bed.mp3': 'bed',
     'bee.mp3': 'bee',
     'egg.mp3': 'egg',
@@ -154,7 +163,128 @@ audio_files = {
     'zoo.mp3': 'zoo',
     'zip.mp3': 'zip',
     'zero.mp3': 'zero',
-    'zebra.mp3': 'zebra'
+    'zebra.mp3': 'zebra',
+    
+    # 音素组合发音和示例词
+    'bl.mp3': 'bl',
+    'blue.mp3': 'blue',
+    'black.mp3': 'black',
+    'block.mp3': 'block',
+    'blow.mp3': 'blow',
+    
+    'br.mp3': 'br',
+    'bread.mp3': 'bread',
+    'brown.mp3': 'brown',
+    'brush.mp3': 'brush',
+    'bridge.mp3': 'bridge',
+    
+    'cl.mp3': 'cl',
+    'clock.mp3': 'clock',
+    'cloud.mp3': 'cloud',
+    'clean.mp3': 'clean',
+    'climb.mp3': 'climb',
+    
+    'cr.mp3': 'cr',
+    'crab.mp3': 'crab',
+    'cry.mp3': 'cry',
+    'crown.mp3': 'crown',
+    'crane.mp3': 'crane',
+    
+    'dr.mp3': 'dr',
+    'drum.mp3': 'drum',
+    'draw.mp3': 'draw',
+    'drink.mp3': 'drink',
+    'dress.mp3': 'dress',
+    
+    'fl.mp3': 'fl',
+    'flag.mp3': 'flag',
+    'fly.mp3': 'fly',
+    'flower.mp3': 'flower',
+    'floor.mp3': 'floor',
+    
+    'fr.mp3': 'fr',
+    'frog.mp3': 'frog',
+    'friend.mp3': 'friend',
+    'fruit.mp3': 'fruit',
+    'freeze.mp3': 'freeze',
+    
+    'gl.mp3': 'gl',
+    'glass.mp3': 'glass',
+    'glue.mp3': 'glue',
+    'globe.mp3': 'globe',
+    'glove.mp3': 'glove',
+    
+    'gr.mp3': 'gr',
+    'green.mp3': 'green',
+    'grass.mp3': 'grass',
+    'grape.mp3': 'grape',
+    'grow.mp3': 'grow',
+    
+    'pl.mp3': 'pl',
+    'play.mp3': 'play',
+    'plane.mp3': 'plane',
+    'plant.mp3': 'plant',
+    'plus.mp3': 'plus',
+    
+    'pr.mp3': 'pr',
+    'price.mp3': 'price',
+    'proud.mp3': 'proud',
+    'print.mp3': 'print',
+    'pray.mp3': 'pray',
+    
+    'sc.mp3': 'sc',
+    'scan.mp3': 'scan',
+    'school.mp3': 'school',
+    'score.mp3': 'score',
+    'scarf.mp3': 'scarf',
+    
+    'sk.mp3': 'sk',
+    'sky.mp3': 'sky',
+    'skip.mp3': 'skip',
+    'skin.mp3': 'skin',
+    'skull.mp3': 'skull',
+    
+    'sl.mp3': 'sl',
+    'sleep.mp3': 'sleep',
+    'slide.mp3': 'slide',
+    'slow.mp3': 'slow',
+    'slice.mp3': 'slice',
+    
+    'sm.mp3': 'sm',
+    'smile.mp3': 'smile',
+    'small.mp3': 'small',
+    'smart.mp3': 'smart',
+    'smoke.mp3': 'smoke',
+    
+    'sn.mp3': 'sn',
+    'snake.mp3': 'snake',
+    'snow.mp3': 'snow',
+    'snail.mp3': 'snail',
+    'snap.mp3': 'snap',
+    
+    'sp.mp3': 'sp',
+    'space.mp3': 'space',
+    'speak.mp3': 'speak',
+    'spoon.mp3': 'spoon',
+    'sport.mp3': 'sport',
+    
+    'st.mp3': 'st',
+    'star.mp3': 'star',
+    'stop.mp3': 'stop',
+    'stone.mp3': 'stone',
+    'stick.mp3': 'stick',
+    
+    'sw.mp3': 'sw',
+    'swim.mp3': 'swim',
+    'sweet.mp3': 'sweet',
+    'swing.mp3': 'swing',
+    'sweep.mp3': 'sweep',
+    
+    'tr.mp3': 'tr',
+    'tree.mp3': 'tree',
+    'train.mp3': 'train',
+    'truck.mp3': 'truck',
+    'try.mp3': 'try',
 }
 
 # 确保音频目录存在

@@ -35,6 +35,24 @@ const levels = ref([
     name: '辅音字母',
     icon: 'music-o',
     route: '/phonics/consonants'
+  },
+  {
+    id: 3,
+    name: '音素组合',
+    icon: 'friends-o',
+    route: '/phonics/blends'
+  },
+  {
+    id: 4,
+    name: '单词拼读',
+    icon: 'edit',
+    route: '/phonics/word-building'
+  },
+  {
+    id: 5,
+    name: '句子阅读',
+    icon: 'book-o',
+    route: '/phonics/reading'
   }
 ])
 
